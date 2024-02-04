@@ -35,7 +35,7 @@ export default function Home() {
           </SignedIn>
         </div>
         <div className="select-none pointer-events-none">
-          <Image src="/mockup1.png" alt="LGDA Mockup" width={580} height={370} className=" hidden lg:block  " />
+          <Image src="/mockup1.png" alt="LGDA Mockup" width={580} height={370} className=" hidden lg:block" />
         </div>
       </div>
     </main>
