@@ -1,6 +1,8 @@
 import Navbar from "./navbar";
 import Image from "next/image";
 import { FaAngleRight } from "react-icons/fa6";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,9 +21,18 @@ export default function Home() {
               <br /> Liam Bergin
             </span>
           </p>
-          <button className="bg-teal-600 text-white px-5 py-3 rounded-full inline-flex items-center font-semibold hover:opacity-80 transition ease-in-out mt-6 ">
-            Get Started <FaAngleRight className="ml-1" />
-          </button>
+
+          <SignedOut>
+            <Link href="/signininfo" className="bg-teal-600 text-white px-5 py-3 rounded-full inline-flex items-center font-semibold hover:opacity-80 transition ease-in-out mt-6">
+              Sign in
+            </Link>
+          </SignedOut>
+
+          <SignedIn>
+            <Link href="/members" className="bg-teal-600 text-white px-5 py-3 rounded-full inline-flex items-center font-semibold hover:opacity-80 transition ease-in-out mt-6">
+              Members Area
+            </Link>
+          </SignedIn>
         </div>
         <div className="select-none pointer-events-none">
           <Image src="/mockup1.png" alt="LGDA Mockup" width={580} height={370} className=" hidden lg:block  " />
