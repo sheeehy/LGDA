@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
     <nav className="flex justify-between items-center py-4 bg-transparent px-4 mt-2 my-2">
       {/* Logo */}
       <div>
-        <Image src="/update.jpg" alt="LGDA Logo" width={100} height={100} />
+        <Image src="/update.png" alt="LGDA Logo" width={100} height={100} />
       </div>
 
       {/* Links */}
