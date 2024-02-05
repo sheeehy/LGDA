@@ -23,7 +23,7 @@ export default function Home() {
           </p>
 
           <SignedOut>
-            <Link href="/signininfo" className="bg-teal-600 text-white px-5 py-3 rounded-full inline-flex items-center font-semibold hover:opacity-80 transition ease-in-out mt-6">
+            <Link href="/sign-in" className="bg-teal-600 text-white px-5 py-3 rounded-full inline-flex items-center font-semibold hover:opacity-80 transition ease-in-out mt-6">
               Sign in
             </Link>
           </SignedOut>
