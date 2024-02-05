@@ -35,7 +35,7 @@ export default function Page() {
             </a>
             <h2>
               <a href="Directors Coaching Pres (1).pdf" className="text-teal-600">
-                'Directors Coaching' Presentation
+                Directors Coaching Presentation
               </a>
             </h2>
           </div>
@@ -46,7 +46,7 @@ export default function Page() {
             </a>
             <h2>
               <a href="IT Resilience LGDA for word (2).pdf" className="text-teal-600">
-                'Resilience at Work' Presentation
+                Resilience at Work Presentation
               </a>
             </h2>
           </div>
