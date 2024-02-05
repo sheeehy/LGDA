@@ -16,7 +16,7 @@ export default function Page() {
       </div>
 
       <div className="flex items-center justify-center mt-12 flex-col">
-        <h1 className="text-3xl text-teal-600 font-semibold mb-4 ">Annual Conference 2024</h1>
+        <h1 className="text-3xl text-teal-600 font-semibold mb-4 px-2 ">Annual Conference 2024</h1>
         <p className="max-w-3xl px-4">
           The theme of this conference is entitled Evolving role of the Director. The conference will address the contribution that senior management makes to transforming public
           services on an ongoing basis. Local Government has already demonstrated its ability to adapt to the changing needs of our society. However, the new challenges that face
