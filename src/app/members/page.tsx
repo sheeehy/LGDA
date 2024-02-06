@@ -6,7 +6,7 @@ export default function Page() {
       <div className="flex items-center justify-center mt-12 px-4 flex-col  ">
         <div className="text-center max-w-2xl mb-4">
           <h1 className="font-extrabold text-4xl text-teal-600 mb-2">Members Area</h1>
-          <h2 className="font-semibold text-xl">LGDA Calender</h2>
+          <h2 className="font-semibold text-xl">LGDA Calendar</h2>
         </div>
         <iframe
           src="https://outlook.live.com/calendar/0/published/00000000-0000-0000-0000-000000000000/689ef28c-c9b2-4f15-9b70-dc10735800cb/cid-888FCBB057A1F43E/calendar.html"
