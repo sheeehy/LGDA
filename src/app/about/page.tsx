@@ -4,10 +4,10 @@ export default function Page() {
     <main className="">
       <Navbar />
       <div className="flex items-center justify-center mt-12 px-4 ">
-        <div className="text-left max-w-2xl">
+        <div className="text-left max-w-2xl text-xl">
           <h1 className="font-extrabold text-4xl text-teal-600 mb-2">About</h1>
           <p>The LGDA is a professional association of Directors of Services, Executive Managers in Dublin City, Heads of Functions and others who are on a common pay scale.</p>
-          <h2 className="mt-6 text-lg font-semibold mb-2">The objectives of the LGDA are: </h2>
+          <h2 className="mt-6  font-semibold mb-2">The objectives of the LGDA are: </h2>
           <li>To represent the views of the members of the Association</li>
           <li>To promote the professional interests and development of the membership</li>
           <li>

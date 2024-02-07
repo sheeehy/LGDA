@@ -1,6 +1,5 @@
 import Navbar from "./navbar";
 import Image from "next/image";
-import { FaAngleRight } from "react-icons/fa6";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 
