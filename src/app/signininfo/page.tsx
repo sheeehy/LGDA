@@ -5,7 +5,7 @@ export default function Page() {
       <Navbar />
       <div className="flex items-center justify-center mt-12 px-4 ">
         <div className="text-left max-w-2xl">
-          <h1 className="font-extrabold text-4xl text-teal-600 mb-2">Membership</h1>
+          <h1 className="font-extrabold text-4xl text-teal-600 mb-2">Sign Up</h1>
           <p>The members area contains relevant documents, videos, media and calander concerning the LGDA. </p>
 
           <h2 className="mt-8 font-semibold text-lg">Already a member?</h2>

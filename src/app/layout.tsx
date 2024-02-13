@@ -21,8 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className="flex-col">
-        <body className={poppins.className}>{children}</body>
+      <html lang="en" className="flex flex-col h-full">
+        <body className="flex-grow">{children}</body>
         <Footer />
       </html>
     </ClerkProvider>
