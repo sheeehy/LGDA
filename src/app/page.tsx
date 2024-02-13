@@ -1,6 +1,5 @@
 import Navbar from "./navbar";
 import Image from "next/image";
-import { FaAngleRight } from "react-icons/fa6";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
 
@@ -10,7 +9,7 @@ export default function Home() {
       <Navbar />
       <div className="flex items-center justify-center ">
         <div className="max-w-xl text-left px-4 mb-12 ">
-          <h1 className="font-extrabold text-5xl mb-4 mt-16 sm:mt-0 bg-clip-text text-transparent bg-gradient-to-t from-teal-700 to-teal-600 ml-2 ">
+          <h1 className="font-extrabold text-5xl mb-6 mt-16 sm:mt-0 bg-clip-text text-transparent bg-gradient-to-t from-teal-700 to-teal-600 ml-2 ">
             Local Government Directors Association
           </h1>
           <p className="text-zinc-800 ml-2">
