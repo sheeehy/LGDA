@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
           <UserButton />
         </SignedIn>
         <SignedOut>
-          <Link href="/sign-in" className="font-semibold bg-teal-600 text-white px-4 py-2 rounded-full hover:opacity-80 transition ease-in-out">
+          <Link href="/sign-in" className="font-semibold bg-teal-600 text-white px-4 py-2 rounded-full hover:opacity-80 transition ease-in-out text-nowrap">
             Sign in
           </Link>
         </SignedOut>
