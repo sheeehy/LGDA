@@ -5,28 +5,30 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center py-4 bg-transparent px-4 mt-2 my-2">
-      {/* Logo */}
-      <div className="hover:opacity-80 transition ease-in-out hidden sm:block ">
+    <nav className="flex items-center justify-between py-4 bg-transparent px-4 mt-2 my-2 relative mb-6">
+      {/* Logo - Centered on larger screens, left on smaller screens */}
+      <div className="sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 flex sm:block">
         <Link href="/">
-          <Image src="/update.png" alt="LGDA Logo" width={100} height={100} />
+          <div className="cursor-pointer">
+            <Image src="/update.png" alt="LGDA Logo" width={120} height={120} className="hover:opacity-85 transition ease-in-out" />
+          </div>
         </Link>
       </div>
 
-      {/* Links */}
-      <div className="flex justify-center space-x-4 py-2 px-4 font-semibold  text-zinc-800">
-        <div className="py-2 space-x-4">
-          <Link href="/" className="hover:text-teal-600 transition-colors duration-300 ease-in-out">
-            Home
-          </Link>
-          <Link href="/about" className="hover:text-teal-600 transition-colors duration-300 ease-in-out">
+      {/* Placeholder to maintain space for the centered logo on smaller screens */}
+      <div className="block sm:hidden flex-grow"></div>
+
+      {/* Links - Always on the right */}
+      <div className="flex items-center justify-end flex-grow">
+        <div className="space-x-8 py-2 px-4 font-semibold text-zinc-800">
+          <Link href="/about" className="hover:opacity-75 transition ease-in-out">
             About
           </Link>
-          <Link href="/contact" className="hover:text-teal-600 transition-colors duration-300 ease-in-out">
+          <Link href="/contact" className="hover:opacity-75 transition ease-in-out">
             Contact
           </Link>
           <SignedIn>
-            <Link href="/members" className="hover:text-teal-600 transition-colors duration-300 ease-in-out">
+            <Link href="/members" className="hover:opacity-75 transition ease-in-out">
               Members
             </Link>
           </SignedIn>
@@ -36,7 +38,7 @@ const Navbar: React.FC = () => {
           <UserButton />
         </SignedIn>
         <SignedOut>
-          <Link href="/sign-in" className="font-semibold bg-teal-600 text-white px-4 py-2 rounded-full hover:opacity-80 transition ease-in-out text-nowrap">
+          <Link href="/sign-in" className="font-semibold bg-teal-600 text-white px-4 py-2 rounded-full hover:opacity-80 transition ease-in-out">
             Sign in
           </Link>
         </SignedOut>
