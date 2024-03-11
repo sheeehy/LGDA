@@ -58,7 +58,7 @@ export default function Page() {
               </li>
               <li>
                 <a href="https://youtu.be/7Y6ImIiN7YQ" className="text-teal-600">
-                  LGDA Conference 2024 Senan Turnbull Company Charity Director
+                  LGDA 2024 Senan Turnbull Company Charity Director
                 </a>
               </li>
               <li>
