@@ -29,6 +29,36 @@ export default function Page() {
         <div className=" px-12 max-w-xl text-left font-semibold">
           <h1 className="text-teal-600 font-semibold text-3xl mb-4 text-center ">Webinars</h1>
           <div className="bg-gray-100 p-4">
+            <h1 className="text-lg">LGDA Conference 2024</h1>
+            <a href="https://youtu.be/Zn5MvcGYNZ8" className="text-teal-600">
+              LGDS AGM Opening Liam Bergin
+            </a>
+            <a href="https://youtu.be/SbunseSQBFU" className="text-teal-600">
+              LGDS AGM Liam Bergin & IPB Training
+            </a>
+            <a href="https://youtu.be/ATSMQvY6tfE" className="text-teal-600">
+              LGDS AGM David Joyce Secretarys Report
+            </a>
+            <a href="https://youtu.be/dlsWa2gYsSc" className="text-teal-600">
+              LGDS Anne Devine Treasurers Report
+            </a>
+            <a href="https://youtu.be/NNp0-D0z03A" className="text-teal-600">
+              LGDA Conference 2024 Workshops
+            </a>
+            <a href="https://youtu.be/7Y6ImIiN7YQ" className="text-teal-600">
+              LGDA Conference 2024 Senan Turnbull Company Charity Director
+            </a>
+            <a href="https://youtu.be/aZeweD7hPdY" className="text-teal-600">
+              LGDA Conference 2024 Pat Daly Opening Address
+            </a>
+            <a href="https://youtu.be/47s2rifWAJU" className="text-teal-600">
+              LGDA Conference 2024 IPB
+            </a>
+            <a href="https://youtu.be/p0xevJ1nbPc" className="text-teal-600">
+              LGDA Conference 2024 Donal Brennan
+            </a>
+          </div>
+          <div className="bg-gray-100 p-4">
             <h1 className="text-lg">April 5th 2023</h1>
             <a href="https://youtu.be/MJ_Z_YNn8is" className="text-teal-600">
               Webinar Video
