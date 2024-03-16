@@ -29,6 +29,13 @@ export default function Page() {
         <div className=" px-12 max-w-xl text-left font-semibold">
           <h1 className="text-teal-600 font-semibold text-3xl mb-4 text-center ">Webinars</h1>
           <div className="bg-gray-100 p-4">
+            <h1 className="text-lg">Webinar 1 2024</h1>
+            <a href="https://youtu.be/cTJCuWHdQiI" className="text-teal-600">
+              Webinar Video
+            </a>
+          </div>
+
+          <div className="bg-gray-100 p-4">
             <h1 className="text-lg">LGDA Conference 2024</h1>
             <ul className="list-disc pl-5">
               <li>
