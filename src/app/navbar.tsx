@@ -21,12 +21,6 @@ const Navbar: React.FC = () => {
       {/* Links - Always on the right */}
       <div className="flex items-center justify-end flex-grow">
         <div className="space-x-8 py-2 px-4 font-semibold text-zinc-800">
-          <Link href="/about" className="hover:opacity-75 transition ease-in-out">
-            About
-          </Link>
-          <Link href="/contact" className="hover:opacity-75 transition ease-in-out">
-            Contact
-          </Link>
           <SignedIn>
             <Link href="/members" className="hover:opacity-75 transition ease-in-out">
               Members

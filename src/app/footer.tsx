@@ -7,6 +7,12 @@ const Footer: React.FC = () => {
       {/* Links */}
       <div className="flex justify-center space-x-4 py-2 px-4 font-semibold text-zinc-700 text-nowrap">
         <div className="py-2 space-x-8 ">
+          <Link href="/about" className="hover:text-zinc-600 transition ease-in-out">
+            About
+          </Link>
+          <Link href="/contact" className="hover:text-zinc-600 transition ease-in-out">
+            Contact
+          </Link>
           <Link href="/accesibility" className="hover:text-zinc-600 transition-colors duration-300 ease-in-out text-nowrap mt-2">
             Accesibility Statement
           </Link>
