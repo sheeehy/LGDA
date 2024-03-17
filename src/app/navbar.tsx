@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         <div className="space-x-8 py-2 px-4 font-semibold text-zinc-800">
           <SignedIn>
             <Link href="/members" className="hover:opacity-75 transition ease-in-out">
-              Members
+              Members Area
             </Link>
           </SignedIn>
         </div>
