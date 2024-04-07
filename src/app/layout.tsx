@@ -27,9 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={poppins.className}>
-        <body className="flex-grow">{children}</body>
-        <Footer />
+      <html lang="en" className="h-full">
+        <head></head>
+        <body className="flex flex-col min-h-screen">
+          <div className="flex-grow">{children}</div>
+
+          <div className="w-full">
+            <Footer />
+          </div>
+        </body>
       </html>
     </ClerkProvider>
   );

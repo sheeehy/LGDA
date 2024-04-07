@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="font-extrabold text-5xl mb-4 mt-16 sm:mt-0 bg-clip-text text-transparent bg-gradient-to-t from-teal-700 to-teal-600 ml-2 ">
             Local Government Directors Association
           </h1>
-          <p className="text-zinc-800 text-lg font-semibold ml-2">
+          <p className="text-zinc-800 text-lg  ml-2">
             The LGDA is a professional association of Directors of Services, Executive Managers in Dublin City, Heads of Functions and others to whom functions are delegated by a
             City or County Manager.
           </p>
