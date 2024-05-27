@@ -14,9 +14,14 @@ export default function Home() {
           </h1>
           <p className="text-zinc-800 text-lg  ml-2">
             The LGDA is a professional association of Directors of Services, Executive Managers in Dublin City, Heads of Functions and others to whom functions are delegated by a
-            City or County Manager.
+            City or County Chief Executive.
           </p>
-
+          <div className="flex mt-4">
+            <p className="ml-2 text-lg">
+              Liam Bergin, <br></br>Chair{" "}
+            </p>
+            <Image src="/LiamNew.png" alt="Liam Bergin Signature" width={60} height={60} className="ml-4" />
+          </div>
           <div className="ml-2">
             <SignedOut>
               <Link href="/about" className="bg-teal-600 text-white px-5 py-3 rounded-full inline-flex items-center font-semibold hover:opacity-80 transition ease-in-out mt-6">

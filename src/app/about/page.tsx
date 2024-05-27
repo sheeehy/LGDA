@@ -21,6 +21,20 @@ export default function Page() {
             </ul>
             <ul>• To provide a framework to facilitate the efficient operation of vocational groups and networks</ul>
           </div>
+
+          <div>
+            <h1 className="mt-6 font-semibold mb-2">Board of Directors</h1>
+            <h2>• Liam Bergin, Chair</h2>
+            <h2>• Donal Brennan, Vice Chair (LGDS)</h2>
+            <h2>• Liam Ward, Vice Chair (LGDA)</h2>
+            <h2>• Michael Nicholson, Membership Officer</h2>
+            <h2>• Anne Devine, Treasurer</h2>
+            <h2>• Joanne Grehan</h2>
+            <h2>• Paddy Connaughton</h2>
+            <h2>• Louis Duffy</h2>
+            <h2>• David Joyce</h2>
+            <h2>• Caitlin Conneely</h2>
+          </div>
         </div>
       </div>
     </main>
