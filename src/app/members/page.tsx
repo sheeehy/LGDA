@@ -177,10 +177,10 @@ export default function Page() {
             </a>
             <h2>
               <a
-                href="/LGDA_Webinar_2_of_3_2024_2024-09-11.pdf"
+                href="/LGDA Webinar 2 of 3 2024_2024-09-11.pdf"
                 className="text-teal-600"
               >
-                Webinar Transcript
+                Webinar Video 2 of 3 2024 Transcript
               </a>
             </h2>
           </div>
