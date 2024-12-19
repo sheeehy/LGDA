@@ -11,3 +11,37 @@
   width: 0;
   background: transparent;
 }
+
+.rbc-calendar {
+  @apply font-sans;
+}
+
+.rbc-toolbar button {
+  @apply bg-white text-teal-600 border-teal-300 hover:bg-teal-50;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-teal-600 text-white;
+}
+
+.rbc-event {
+  @apply bg-teal-600 border-teal-700;
+}
+
+.rbc-today {
+  @apply bg-teal-50;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-100;
+}
+
+.rbc-header {
+  @apply bg-teal-100 text-teal-800 font-semibold;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
