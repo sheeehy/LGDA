@@ -22,7 +22,7 @@ export function Dashboard() {
       </section>
       <div className="flex items-center justify-center">
         Need to add content to the Members Area? Check the{" "}
-        <a className="underline text-teal-600" href="documentation.pdf" target="_blank">
+        <a className="underline ml-0 sm:ml-2 text-teal-500" href="documentation.pdf" target="_blank">
           documentation
         </a>
         .
