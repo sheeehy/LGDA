@@ -20,6 +20,13 @@ export function Dashboard() {
         <h2 className="text-2xl font-semibold mb-4 text-teal-700">Archive</h2>
         <Archive />
       </section>
+      <div className="flex items-center justify-center">
+        Need to add content to the Members Area? Check the{" "}
+        <a className="underline text-teal-600" href="documentation.pdf" target="_blank">
+          documentation
+        </a>
+        .
+      </div>
     </div>
   );
 }
