@@ -29,7 +29,6 @@ export async function getArchiveData() {
     "url": file.asset->url
   }`;
   return await client.fetch(query);
-  console.log(query)
 }
 
 export async function getIntroductionParagraph() {
