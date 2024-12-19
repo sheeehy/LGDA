@@ -1,19 +1,42 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Video, Calendar } from "lucide-react";
+import { useState, useEffect } from "react";
 
-const webinars = [
-  {
-    id: 1,
-    title: "Introduction to LGDA",
-    date: "2024-03-15",
-    media: [
-      { title: "Presentation Slides", type: "pdf", url: "https://example.com/intro-lgda-slides.pdf" },
-      { title: "Recorded Session", type: "video", url: "https://example.com/intro-lgda-video" },
-    ],
-  },
-];
+interface MediaItem {
+  title: string;
+  type: string;
+  file?: { asset: { url: string } };
+  videoUrl?: string;
+}
+
+interface Webinar {
+  _id: string;
+  title: string;
+  date: string;
+  media: MediaItem[];
+}
 
 export function Webinars() {
+  const [webinars, setWebinars] = useState<Webinar[]>([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await fetch("/api/WebinarsData");
+        const result = await res.json();
+        if (res.ok) {
+          setWebinars(result);
+        } else {
+          console.error("An error occurred:", result);
+        }
+      } catch (error) {
+        console.error("Error fetching webinars:", error);
+      }
+    }
+    fetchData();
+  }, []);
+
   const getIcon = (type: string) => {
     switch (type) {
       case "pdf":
@@ -25,10 +48,19 @@ export function Webinars() {
     }
   };
 
+  const getUrl = (item: MediaItem) => {
+    if (item.type === "pdf" && item.file?.asset?.url) {
+      return item.file.asset.url;
+    } else if (item.type === "video" && item.videoUrl) {
+      return item.videoUrl;
+    }
+    return "#";
+  };
+
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {webinars.map((webinar) => (
-        <Card key={webinar.id} className="transition-all duration-300 hover:shadow-lg">
+        <Card key={webinar._id} className="transition-all duration-300 hover:shadow-lg">
           <CardHeader>
             <CardTitle className="text-lg">{webinar.title}</CardTitle>
             <p className="text-sm text-gray-500 flex items-center">
@@ -41,7 +73,7 @@ export function Webinars() {
               {webinar.media.map((item, index) => (
                 <li key={index}>
                   <a
-                    href={item.url}
+                    href={getUrl(item)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center text-sm text-teal-600 hover:text-teal-800 hover:underline transition-colors duration-300"
