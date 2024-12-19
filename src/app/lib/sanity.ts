@@ -9,14 +9,14 @@ export const client = createClient({
 });
 
 export async function getWebinarData() {
-  const query = `*[_type == "webinar"]{
+  const query = `*[_type == "webinar"] | order(date desc) {
     _id,
     title,
     date,
-    media[]{
+    media[] {
       title,
       type,
-      file{asset->},
+      file { asset-> },
       videoUrl
     }
   }`;
@@ -39,4 +39,3 @@ export async function getIntroductionParagraph() {
   }`;
   return await client.fetch(query);
 }
-
