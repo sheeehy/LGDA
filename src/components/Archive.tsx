@@ -1,3 +1,4 @@
+"use client";
 import { getArchiveData } from "@/app/lib/sanity";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
