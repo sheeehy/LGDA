@@ -1,24 +1,14 @@
-import { getWebinarData } from "@/app/lib/sanity";
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, Video, Calendar } from "lucide-react";
+import { Webinar, MediaItem } from "../app/types/webinar";
 
-interface MediaItem {
-  title: string;
-  type: string;
-  file?: { asset: { url: string } };
-  videoUrl?: string;
+interface WebinarsClientProps {
+  webinars: Webinar[];
 }
 
-interface Webinar {
-  _id: string;
-  title: string;
-  date: string;
-  media: MediaItem[];
-}
-
-export async function Webinars() {
-  const webinars = await getWebinarData();
-
+export function WebinarsClient({ webinars }: WebinarsClientProps) {
   const getIcon = (type: string) => {
     switch (type) {
       case "pdf":
@@ -41,7 +31,7 @@ export async function Webinars() {
 
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {webinars.map((webinar: Webinar) => (
+      {webinars.map((webinar) => (
         <Card key={webinar._id} className="transition-all duration-300 hover:shadow-lg">
           <CardHeader>
             <CardTitle className="text-lg">{webinar.title}</CardTitle>

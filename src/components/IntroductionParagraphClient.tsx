@@ -1,11 +1,18 @@
-import { getIntroductionParagraph } from "@/app/lib/sanity";
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 
-export async function IntroductionParagraph() {
-  const data = await getIntroductionParagraph();
+interface IntroductionParagraphData {
+  _id: string;
+  title: string;
+  text: string;
+}
 
-  if (!data) return null;
+interface IntroductionParagraphClientProps {
+  data: IntroductionParagraphData;
+}
 
+export function IntroductionParagraphClient({ data }: IntroductionParagraphClientProps) {
   return (
     <Card className="bg-white shadow-md">
       <CardContent className="p-6">
