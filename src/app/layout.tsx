@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Poppins } from "next/font/google";
 import { Inter } from "next/font/google";
 import Footer from "./footer";
+import Navbar from "./navbar";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "800"],
-});
-
+// Inter font
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "800"],
@@ -28,13 +24,17 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className="h-full">
-        <head></head>
-        <body className="flex flex-col min-h-screen">
-          <div className="flex-grow">{children}</div>
-
-          <div className="w-full">
-            <Footer />
+        {/* Add Google Fonts link for Afacad Flux */}
+        <head>
+          <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet" />
+        </head>
+        <body className={`${inter.className} flex flex-col min-h-screen`}>
+          <div className="flex-grow">
+            {" "}
+            <Navbar />
+            {children}
           </div>
+          <Footer />
         </body>
       </html>
     </ClerkProvider>

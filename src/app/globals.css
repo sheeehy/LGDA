@@ -6,3 +6,8 @@
   background-color: #285651;
   color: #fff;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}

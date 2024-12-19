@@ -5,8 +5,7 @@ import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex items-center justify-between py-4 bg-transparent px-4 mt-2 my-2 relative mb-6">
-      {/* Logo - Centered on larger screens, left on smaller screens */}
+    <nav className="flex items-center justify-between py-4 bg-transparent px-6 mt-2 my-2 relative mb-0 z-10">
       <div className="sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2 flex sm:block">
         <Link href="/">
           <div className="cursor-pointer">
