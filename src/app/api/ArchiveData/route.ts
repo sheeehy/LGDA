@@ -2,8 +2,6 @@ import { NextResponse } from "next/server";
 import { getArchiveData } from "@/app/lib/sanity";
 import { auth } from "@clerk/nextjs";
 
-export const revalidate = 0; // revalidate at most every second
-
 export async function GET() {
   const { userId } = auth();
 
