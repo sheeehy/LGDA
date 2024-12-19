@@ -24,11 +24,12 @@ export async function getWebinarData() {
 }
 
 export async function getArchiveData() {
-  const query = `*[_type == "archiveFile"]{
+  const query = `*[_type == "archiveType"]{
     year,
     "url": file.asset->url
   }`;
   return await client.fetch(query);
+  console.log(query)
 }
 
 export async function getIntroductionParagraph() {
