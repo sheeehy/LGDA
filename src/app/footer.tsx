@@ -22,9 +22,7 @@ const Footer: React.FC = () => {
           <Link href="/signininfo" className="hover:text-zinc-400 transition-colors duration-300 ease-in-out">
             Sign Up
           </Link>
-          <a href="https://remise.ie" className="hover:text-zinc-400 transition-colors duration-300 ease-in-out">
-            Site Credits
-          </a>
+          
         </div>
       </div>
     </footer>
