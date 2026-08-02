@@ -10,7 +10,13 @@ export default function Page() {
           <p>Check your email for a link to sign in or sign up. Once signed in, you will have access to the members area.</p>
 
           <h2 className="mt-8 font-semibold text-lg">Not a member?</h2>
-          <p>Contact our Membership Officer to pay the membership fee. Once paid, you will recieve an email allowing you to sign up for the members area.</p>
+          <p>
+            Contact our Membership Officer{" "}
+            <a href="mailto:mnichols@wicklowcoco.ie" className="text-teal-600 hover:underline">
+              mnichols@wicklowcoco.ie
+            </a>{" "}
+            to pay the membership fee. Once paid, you will receive an email allowing you to sign up for the members area.
+          </p>
         </div>
       </div>
     </main>

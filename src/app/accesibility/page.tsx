@@ -12,7 +12,7 @@ export default function Page() {
             accessibility standard. The non-accessible content items include PDFs.
             <br />
             <br />
-            This site may contain links to other websites outside our control. The Local Government Management Agency is not responsible for the privacy practices or the content of
+            This site may contain links to other websites outside our control. The Local Government Directors Association is not responsible for the privacy practices or the content of
             such websites.
           </p>
         </div>

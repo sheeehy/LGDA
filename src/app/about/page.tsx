@@ -14,8 +14,8 @@ export default function Page() {
             <ul>• To represent the views of the members of the Association</ul>
             <ul>• To promote the professional interests and development of the membership</ul>
             <ul>
-              • To co-operate with the County and City Managers Association (CCMA), Government Departments, the Local Government Management Services Board, the Local Government
-              Computer Services Board, and other state and semi-state organizations
+              • To co-operate with the County and City Managers Association (CCMA), Government Departments, the Local Government Management Agency and other state and semi-state
+              organizations
             </ul>
             <ul>• To provide a framework to facilitate the efficient operation of vocational groups and networks</ul>
           </div>
@@ -24,14 +24,13 @@ export default function Page() {
             <h1 className="mt-6 font-semibold mb-2">Board of Directors</h1>
             <h2>• Liam Bergin, Chair</h2>
             <h2>• Donal Brennan, Vice Chair (LGDS)</h2>
-            <h2>• Liam Ward, Vice Chair (LGDA)</h2>
+            <h2>• David Joyce, Vice Chair (LGDA)</h2>
             <h2>• Michael Nicholson, Membership Officer</h2>
             <h2>• Anne Devine, Treasurer</h2>
             <h2>• Joanne Grehan</h2>
             <h2>• Paddy Connaughton</h2>
-            <h2>• Louis Duffy</h2>
-            <h2>• David Joyce</h2>
-            <h2>• Caitlin Conneely</h2>
+            <h2>• Carmel Kirby</h2>
+            <h2>• Nicola Radley</h2>
           </div>
         </div>
       </div>
